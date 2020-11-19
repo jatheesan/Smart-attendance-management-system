@@ -14,7 +14,7 @@
     }
     .vl{
     border-left: 3px solid black;
-    height: 300px;
+    height: 270px;
     position: absolute ;
     left:35%;
     margin-left:-1px;
@@ -48,7 +48,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Smart Attendance Management System') }}</div>
+                <div class="card-header text-center">{{ __('STUDENT REGISTER') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -68,9 +68,10 @@
                         <div ><hr class="vl"> </div>
 
                         <div class="col col-sm">
-                            <div>
+                            {{--<div>
                                 <h3 class="a">STUDENT REGISTER</h3><br>
                             </div>
+                            --}}
                             <div class="form-group row d-none">
                                 <label for="id" class="col-md-4 col-form-label text-md-right">{{ __('ID') }}</label>
     
