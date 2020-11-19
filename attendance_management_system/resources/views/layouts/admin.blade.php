@@ -157,7 +157,7 @@
                 <!-- <hr style="width: 100%; color: black; height: 1px; background-color:black;"
                 /> -->
             </div>
-            <main class="py-5 px-5 left position-absolute">
+            <main class="py-5 px-5 left position-absolute formalign">
                 @yield('content')
             </main>
             <div class="main">

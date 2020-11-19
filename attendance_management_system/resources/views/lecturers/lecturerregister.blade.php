@@ -14,7 +14,7 @@
     }
     .vl{
     border-left: 3px solid black;
-    height: 380px;
+    height: 350px;
     position: absolute ;
     left:35%;
     margin-left:-1px;
@@ -75,7 +75,7 @@
                             <div>
                                 <h3 class="a">LECTURER REGISTER</h3><br>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row d-none">
                                 <label for="id" class="col-md-4 col-form-label text-md-right">{{ __('ID') }}</label>
     
                                 <div class="col-md-6">
@@ -121,8 +121,11 @@
                                 <label for="position" class="col-md-4 col-form-label text-md-right">{{ __('Position') }}</label>
     
                                 <div class="col-md-6">
-                                    <input id="position" type="text" class="form-control @error('position') is-invalid @enderror" name="position" value="{{ old('position') }}" required autocomplete="position">
-    
+                                    <select id="position" class="form-control @error('position') is-invalid @enderror" name="position">
+                                        <option>HOD</option>
+                                        <option selected>lecturer</option>
+                                        <option>lecturer</option>
+                                    </select>
                                     @error('position')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

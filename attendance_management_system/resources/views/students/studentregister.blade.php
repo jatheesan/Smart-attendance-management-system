@@ -14,7 +14,7 @@
     }
     .vl{
     border-left: 3px solid black;
-    height: 330px;
+    height: 300px;
     position: absolute ;
     left:35%;
     margin-left:-1px;
@@ -71,7 +71,7 @@
                             <div>
                                 <h3 class="a">STUDENT REGISTER</h3><br>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row d-none">
                                 <label for="id" class="col-md-4 col-form-label text-md-right">{{ __('ID') }}</label>
     
                                 <div class="col-md-6">

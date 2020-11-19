@@ -40,7 +40,8 @@
                                             value="{{ old('email') }}"
                                             required="required"
                                             autocomplete="email"
-                                            autofocus="autofocus">
+                                            autofocus="autofocus"
+                                            placeholder="name@example.com">
 
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -60,7 +61,8 @@
                                             class="form-control @error('password') is-invalid @enderror"
                                             name="password"
                                             required="required"
-                                            autocomplete="current-password">
+                                            autocomplete="current-password"
+                                            placeholder="password">
 
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
