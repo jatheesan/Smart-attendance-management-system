@@ -43,13 +43,23 @@ Route::get('/admin', function () {
 Route::get('/add', function () {
     return view('layouts.admin');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('welcome');
+  
+    });
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 

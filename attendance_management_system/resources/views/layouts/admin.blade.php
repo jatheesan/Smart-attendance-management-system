@@ -54,10 +54,11 @@
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
                                 aria-expanded="false">
-                                <img
+                                {{--<img
                                     src="http://via.placeholder.com/160x160"
                                     class="user-image"
-                                    alt="User Image">
+                                    alt="User Image">--}}
+                                    <i class="fas fa-user"></i>
                                 <span class="hidden-xs">{{ Auth::user()->name }}</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -166,9 +167,10 @@
                         <div class="user-panel">
                             <div class="pull-left image">
                                 <img
-                                    src="http://via.placeholder.com/160x160"
+                                    src="{{url('/image/1.png')}}"
                                     class="rounded-circle"
                                     alt="User Image">
+                                    {{--<i class="fas fa-user-circle"></i>--}}
                             </div>
                             <div class="pull-left info">
                                 <p>{{ Auth::user()->name }}</p>
